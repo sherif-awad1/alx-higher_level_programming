@@ -1,1 +1,2 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
+cat $PYFILE | python3
