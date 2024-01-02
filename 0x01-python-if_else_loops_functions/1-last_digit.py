@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+'''
+File: 1-last_digit.py
+Author: Sherif Awad
+'''
 import random
 number = random.randint(-10000, 10000)
 if (number >= 0):
