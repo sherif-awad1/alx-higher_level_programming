@@ -7,14 +7,7 @@ Author: Sherif Awad
 
 
 if __name__ == "__main__":
-
-    '''
-    print sum
-          sub
-          mult
-          div
-    '''
-
+    """Print sum, sub, mult, div"""
     from calculator_1 import add, sub, mul, div
 
     a = 10
