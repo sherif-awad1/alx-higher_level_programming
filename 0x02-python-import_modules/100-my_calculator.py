@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-'''
-File: 100-my_caculator.py
-Author: Sherif Awad
-'''
+
 
 
 if __name__ == "__main__":
-    '''handle 3arg calalation '''
+
     from calculator_1 import add, sub, mul, div
     import sys
 
