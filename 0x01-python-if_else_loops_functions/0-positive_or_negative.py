@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-#file:0-positive_or_negative.py
-#author : Sherif Awad
+'''
+file:0-positive_or_negative.py
+author : Sherif Awad
+'''
+
 
 import random
 number = random.randint(-10, 10)
