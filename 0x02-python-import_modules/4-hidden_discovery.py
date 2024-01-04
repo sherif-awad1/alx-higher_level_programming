@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+'''
+File4-hidden_discovery.py
+AuthorSherif AWad
+'''
+
 
 if __name__ == "__main__":
     ''' print all in hidden file '''
