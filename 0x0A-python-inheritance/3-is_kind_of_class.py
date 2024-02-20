@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Author: Sherif Awad
 """Defines a class and inherited class-checking function."""
 
 
