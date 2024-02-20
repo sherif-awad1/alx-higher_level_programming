@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# author: Sherif Awad
-
 """Defines a base geometry class BaseGeometry."""
 
 
