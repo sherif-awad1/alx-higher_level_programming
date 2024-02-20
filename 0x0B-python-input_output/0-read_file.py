@@ -1,5 +1,5 @@
+#!/usr/bin/python3
 # aUTHOR: Sherif Awad
-
 """Defines a text file-reading function."""
 
 
