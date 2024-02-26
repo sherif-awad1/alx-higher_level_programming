@@ -1,49 +1,45 @@
 #!/usr/bin/python3
-'''Module for Square class.'''
+"""square class"""
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    '''A Square class.'''
-
+    """makes a class"""
     def __init__(self, size, x=0, y=0, id=None):
-        '''Constructor.'''
+        """initializes"""
         super().__init__(size, size, x, y, id)
-
-    def __str__(self):
-        '''Returns string info about this square.'''
-        return '[{}] ({}) {}/{} - {}'.\
-            format(type(self).__name__, self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
-        '''Size of this square.'''
+        """gets size"""
         return self.width
 
     @size.setter
     def size(self, value):
+        """sets size"""
         self.width = value
         self.height = value
 
-    def __update(self, id=None, size=None, x=None, y=None):
-        '''Internal method that updates instance attributes via */**args.'''
-        if id is not None:
-            self.id = id
-        if size is not None:
-            self.size = size
-        if x is not None:
-            self.x = x
-        if y is not None:
-            self.y = y
-
     def update(self, *args, **kwargs):
-        '''Updates instance attributes via no-keyword & keyword args.'''
+        """updates square"""
         if args:
-            self.__update(*args)
+            i = 0
+            keys = ['id', 'size', 'x', 'y']
+            for arg in args:
+                setattr(self, keys[i], arg)
+                i += 1
         elif kwargs:
-            self.__update(**kwargs)
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def to_dictionary(self):
-        '''Returns dictionary representation of this class.'''
-        return {"id": self.id, "size": self.width,
-                "x": self.x, "y": self.y}
+        """dictionary"""
+        dic = {'id': self.id, 'size': self.size,
+               'x': self.x, 'y': self.y}
+        return dic
+
+    def __str__(self):
+        """gets rectangle"""
+        return "[{}] ({}) {}/{} - {}".format(
+            type(self).__name__, self.id, self.x, self.y,
+            self.size)
